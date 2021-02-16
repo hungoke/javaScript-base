@@ -6,13 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-
-    <form>
-        <label for="country_code">Country code:</label>
-        <input type="text" id="country_code" name="country_code" pattern="/()[A-Za-z]{2,11}/"><br><br>
-        <input type="submit">
-    </form>
     <div onmouseout="outHoverTime()" onmouseover="hoverTime()">Hover me</div>
+
+    <form action="">
+        <label for="account">Nhập account</label>
+        <input onkeyup="validateAccount(event)" type="text" name="account" id="account">
+    </form>
+
+    <form action="">
+        <label for="typingNumber">Nhập số tiền</label>
+        <input onkeyup="validateNumber(event)" type="text" name="typingNumber" id="typingNumber">
+    </form>
+
+    <div ondblclick="doubleClick()">double click nè</div>
+
+    <p onmouseup="selectContends()">Cộng hòa xã hội chủ nghĩa Việt Nam Độc lập Tự do Hạnh Phúc</p>
+
+    <select onchange="getFruitName(event)" name="fruit" id="fruit">
+        <option value="apple">Phạm Thị Thanh Tâm</option>
+        <option value="banana">Linh Trang</option>
+        <option value="orange">Hưng</option>
+    </select>
     <script src="./main.js"></script>
 </body>
 </html>
