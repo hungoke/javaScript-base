@@ -1,0 +1,13 @@
+.tags {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.tags div {
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.tags label {
+    padding: 20px 10px;
+}

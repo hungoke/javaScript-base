@@ -7,8 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="todo-app">
+        <div>
+            <div>
+                <input id="input" type="text">
+                <button onclick="addNewTask()">Thêm</button>
+            </div>
+        </div>
 
-    <p onclick="printTest()">Cộng hòa xã hội chủ nghĩa Việt Nam</p>
+        <div class="tags">
+            <div>
+                <input type="radio" name="" id="all">
+                <label for="all">All</label>
+            </div>
+
+            <div>
+                <input type="radio" name="" id="home">
+                <label for="home">Home</label>
+            </div>
+
+            <div>
+                <input type="radio" name="" id="work">
+                <label for="work">Work</label>
+            </div>
+
+            <div>
+                <input type="radio" name="" id="school">
+                <label for="school">School</label>
+            </div>
+        </div>
+
+        <div id="tasks-list"></div>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
